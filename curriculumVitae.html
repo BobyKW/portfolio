@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta etiquetas -->
+    <meta name="title" content="Página web completa grid Imagenes">
+    <meta name="description" content="Pagina web completa">
+    <meta name="keywords" content="peluqueria, peluqueria a domicilio">
+    <meta name="robots" content="index, follow">
+    <!-- FAVICON -->
+    <link rel="icon" href="/img/imagenpersonal.jpg" type="image/x-icon">
+    <!-- FIN Meta etiquetas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="curriculumVitae.css">
+    <link rel="stylesheet" href="styleMediaQuery.css">
+    <!-- fontsawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+
+        <!-- botones para enseñar contenido -->
+        <label class="lab_volver" for="volver">Volver</label>
+        <input class="volver" type="radio" name="select" id="volver">
+
+        <label class="lab_est" for="estudios">Estudios</label>
+        <input class="in_estudios" type="radio" name="select" id="estudios">
+
+        <label class="lab_exp" for="experiencia">Experiencia</label>
+        <input class="in_exp" type="radio" name="select" id="experiencia">
+
+        <label class="lab_extra" for="extra">Extra</label>
+        <input class="in_ext" type="radio" name="select" id="extra">
+
+
+        <!-- INFOBLOCK ESTUDIOS -->
+        <div class="estudios display_none select">
+            <h3 class="titulo_princ">Formación</h3>
+            <div class="formacion">
+
+                <div class="complementaria">
+                    <h3 class="titulo-azul">Estudios complementarios</h3>
+                    <div class="desarrollo-web">
+                        <h4><strong>Desarrollo WEB (Actualmente)</strong></h4>
+                        <p><em>HTML, CSS y JavaScript</em></p>
+                        <p>460h // INKOR Formación // 2023</p>
+                    </div>
+                    <div class="desarrollo-comercio">
+                        <h4><strong>Desarrollo de comercio electrónico</strong></h4>
+                        <p><em>Prestashop <br>
+                            Wordpress (Woocommerce)</em></p>
+                            <p>250h // INKOR Formación // 2022</p>
+                        </div>
+                        <div class="logistica">
+                            <h4><strong>Logistica 4.0</strong></h4>
+                            <p>260h // Foment Terrassa // 2020</p>
+                        </div>
+                        <div class="aux-comercio">
+                            <h4><strong>Auxiliar de comercio y Atención al cliente</strong></h4>
+                            <p>90h // Foment Terrassa // 2018</p>
+                        </div>
+                    </div>
+                    <div class="reglada">
+                        <h3 class="titulo-azul">Estudios reglados</h3>
+                        <div class="eso">
+                            <h4><strong>ESO</strong></h4>
+                            <p>IES Terrassa // 2014</p>
+                        </div>
+                        <div class="smix">
+                            <h4><strong>Sistemas microinformáticos y redes.</strong></h4>
+                            <p>1 er año // IES Nicolau Copernic // 2015</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- INFOBLOCK EXPERIENCIA -->
+        <div class="experiencia display_none select">
+            <h3>Estos son mis Experiencia</h3>
+            <div class="estudio1">
+                <h2>Titulo del estudio</h2>
+                <p>Explicacion del estudio</p>
+            </div>
+        </div>
+
+        <!-- INFOBLOCK EXTRAS -->
+        <div class="extras display_none select">
+            <h3>Estos son mis EXTRAS</h3>
+            <div class="estudio1">
+                <h2>Titulo del estudio</h2>
+                <p>Explicacion del estudio</p>
+            </div>
+        </div>
+        <!-- FIN DE INFO BLOCKS -->
+
+        <div class="contenedor">
+            <!-- CARTA -->
+            <aside class="aside">
+                <header>
+                    <figure>
+                        <img src="img/imagenpersonal.jpg" alt="Logo">
+                        <h1><span class="name">Ivan Alonso</span> <br>
+                            Desarrollo WEB</h1>
+                    </figure>
+                </header>
+                <hr>
+                <div class="competencias_img">
+                <h2>Competencias</h2>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <i class="fa-brands fa-css3 fa-2xl"></i>
+                    <i class="fa-brands fa-square-js fa-2xl"></i>
+                </div>
+                <div class="contacto">
+                    <h2>CONTACTO</h2>
+                    <ul>
+                        <li><a href="tel:653643751"><i class="fa-solid fa-phone"></i> 653 643 751</a></li>
+                        <li><a href="mailto:ivan.alo.ace@gmail.com"><i class="fa-solid fa-envelopes-bulk"></i> ivan.alo.ace@gmail.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-person"></i> 11-10-1999</a></li>
+                        <li>Terrassa, 08225</li>
+                    </ul>
+                    
+                </div>
+            </aside>
+            <div class="main">
+                <h2>Selecciona un pestaña para ir a la información</h2>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <a class="go_back" href="index.html"><i class="fa-solid fa-backward"></i> Ir a la pagina principal con todo <i class="fa-solid fa-backward"></i></a>
+</body>
+
+</html>

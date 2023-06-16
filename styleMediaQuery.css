@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        
+    }
+
+    .section-1{
+        height: fit-content;
+    }
+
+    .section-1_text,
+    .section-1_icons{
+        padding: 50px;
+    }
+
+    .section-2{
+        height: fit-content;
+        padding-bottom: 70px;
+    }
+
+    .card__container{
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+
+    .section-3{
+        flex-direction: column;
+        margin: 70px 0px;
+        padding: 250px 20px;
+        gap: 70px;
+    }
+
+}

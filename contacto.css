@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 700px;
+    padding: 30px;
+    
+}
+
+fieldset{
+    padding: 30px;
+}
+
+.nombreyapellido{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.spacer{
+    width: 30px;
+}
+
+.nombre,
+.apellidos,
+.correo,
+.password{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+div{
+    margin: 20px 0px;
+}
+
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones input{
+    width: 150px;
+    height: 40px;
+}

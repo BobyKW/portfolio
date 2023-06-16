@@ -1,0 +1,450 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300;600;800&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+:root{
+    --card-gradient-before: radial-gradient(circle, rgba(74,74,73,1) 18%, rgba(101,100,122,1) 100%, rgba(6,6,6,1) 100%); 
+    --card-before-white: #fff
+}   
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header,
+.header{
+    /* position: relative; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 80px;
+    z-index: 2;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    /* position: absolute;
+    top: 0px; */
+}
+
+header{
+    flex-direction: column;
+    background-image: url(img/Rectangle-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 20px);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+}
+
+header figure img{
+    width: 200px;
+}
+
+header h1,
+header h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+}
+
+header nav,
+header nav ul,
+header nav ul a{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+header nav ul a{
+    color: orange;
+    transition: all 2s ease;
+}
+
+header nav ul a:hover{
+    text-decoration: underline;
+}
+
+header nav ul li{
+    margin: 0px 10px;
+
+}
+
+/* Main Hero */
+.main__hero{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding-left: 100px; */
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    /* background-image: url(img/tuscany-3364921_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+
+}
+
+.main__hero h1{
+    font-size: 4em;
+}
+
+.main__hero h2{
+    font-size: 2em;
+}
+
+.main__hero_button{
+    /* background-color: green; */
+    border: 2px solid orange;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 120px;
+    border-radius: 20px;
+}
+
+.main__hero_button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* section 1 */
+.section-1{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    
+}
+
+.section-1_text{
+    /* background-color: red; */
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.section-1_text .italic{
+    font-style: italic;
+}
+
+.section-1_text .orange{
+    color: orange;
+}
+
+.section-1_text .green{
+    color: green;
+}
+
+.section-1_text .blue{
+    color: blue;
+}
+
+.section-1_icons{
+    display: flex;
+    width: 100%;
+    align-content: start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* section-2 */
+.section-2{
+    height: 70vh;
+    background-color: #e4e2e2;
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 h2{
+    margin: 15px;
+    margin-bottom: 30px;
+    font-size: 2.6em;
+}
+
+.card__container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0px 250px;
+}
+
+.cards{
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+}
+
+.card{
+    border-radius: 30px;
+    padding: 15px;
+    /* background: #fff; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: all 3s ease;
+    padding-bottom: 50px;
+    width: 250px;
+    height: 250px;
+    min-width: 150px;
+    min-height: 100px;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.card_corte_h:hover::before{
+    content: "Corte para hombre con nuestros especialistas: 10€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
+/* .card:hover::after{
+    content: "asdsadasd";
+    width: 200px;
+    height: 200px;
+    /* background-color: red; 
+    display: block;
+    z-index: 3;
+} */
+
+.card_corte_m:hover::before{
+    content: "Corte para mujer con nuestros especialistas: 10€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_peinado_h:hover::before{
+    content: "Peinado para hombre con nuestros especialistas: 8€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_peinado_m:hover::before{
+    content: "Peinado para mujer con nuestros especialistas: 8€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_tinte_h:hover::before{
+    content: "Tinte para hombre con nuestros especialistas: 15€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_tinte_m:hover::before{
+    content: "Tinte para mujer con nuestros especialistas: 15€";
+    background: rgb(74,74,73);
+    background: var(--card-before-white);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section-3 */
+.section-3{
+    height: 350px;
+    /* background-color: red; */
+    padding: 30px 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 150px;
+}
+
+.section-3 img{
+    width: 450px;
+}
+
+.newsletter__container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 140px;
+}
+
+.newsletter__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spacer{
+    height: 25px;
+}
+
+.newsletter__form-text h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.1em;
+    margin-bottom: 8px;
+}
+
+.newsletter__form-inputs{
+    /* background-color: red; */
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter__form-inputs input{
+    /* margin: 10px; */
+    height: 35px;
+}
+
+.newsletter__email{
+    flex-grow: 3;
+}
+
+.newsletter__email:placeholder-shown{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.newsletter__submit{
+    flex-grow: 1;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+
+/* footer */
+/* footer_map */
+.footer_map{
+    width: 100%;
+}
+
+/* social-media */
+.social-media{
+    /* background-color: red; */
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+}
+
+.social-media nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.social-media ul{
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+}
+
+.social-media i{
+    color: orange;
+}
+
+
+/* section__copy */
+.section__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: #ccc;
+}
+

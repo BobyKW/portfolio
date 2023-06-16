@@ -1,0 +1,329 @@
+/* GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300;600;800&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+:root{
+    --color-principal: rgba(103,106,226,1);
+    --color-secundario: #3d7cfa;
+    --gradiente-uno:  linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --gradiente-dos: radial-gradient(at 500px 450px, rgba(174,229,238,1) 0%, rgba(103,106,226,1) 100%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Empezamos aqúi sin lo generico */
+
+/* Grid Principal */
+.contenedor{
+    width: 600px;
+    background: var(--gradiente-dos);
+    display: flex;
+    /* grid-template-areas: 
+    "aside main"
+    ; */
+    height: 10px;
+    min-height: fit-content;
+    justify-content: space-between;
+
+}
+
+/* .contenedor:nth-child(1){
+    grid-area: aside;
+}
+
+.contenedor:nth-child(2){
+    grid-area: main;
+} */
+
+/* Posicionamiento centrado */
+main{
+    width: 1200px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header de la carta */
+.aside img{
+    width: 150px;
+    height: 200px;
+
+}
+
+.name{
+    font-size: 1.2em;
+    color: var(--color-principal);
+}
+
+.aside{
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 270px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    margin: 20px 0 0 15px;
+    width: 70%;
+    height: 2px;
+    /* background-color: var(--color-principal); */
+    border: 1px solid var(--color-principal);
+
+}
+
+.competencias_img h2{
+    font-size: 1.2em;
+}
+
+.contacto{
+    color: #000;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.contacto h2{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.contacto li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.contacto a{
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contacto a:hover{
+    color: #6DD5FA;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 0px 50px;
+    transition: all 1s ease;
+}
+
+
+
+/* contenedor */
+.contenedor{
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+    padding: 25px;
+
+}
+
+.main{
+    /* background-color: var(--color-principal); */
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+
+/* Pruebas botones */
+label{
+    background-color: aquamarine;
+    background-color: rgba(103,106,226,1);
+    padding: 10px 30px;
+    margin: 0 0;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+label:hover{
+    transition: background-color 0.5s ease;
+    background-color: #6DD5FA;
+}
+
+.lab_volver{
+    right: 450px;
+    top: 88px;
+}
+
+.lab_est{
+    right: 550px;
+    top: 88px;
+}
+
+.lab_exp{
+    right: 662px;
+    top: 88px;
+}
+
+.lab_extra{
+    right: 792px;
+    top: 88px;
+}
+/* Inputs */
+input{
+    display: none;
+    /* position: absolute; */
+}
+
+
+
+.display_none{
+    display: none;
+}
+
+.select{
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    position: absolute;
+    top: 160px;
+    left: 780px;
+    border-radius: 10px;
+    width: 700px;
+    height: 565px;
+    min-height: fit-content;
+
+}
+/* Estudios */
+.in_estudios:checked ~ .estudios{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    width: 700px;
+    height: 565;
+    /* right: 40px; */
+}
+
+.in_estudios:checked ~ .main{
+    display: hidden;
+}
+
+/* Experiencia */
+.in_exp:checked ~ .experiencia{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    width: 700px; 
+    height: 565px;
+    /* right: 40px; */
+}
+
+.in_exp:checked ~ .main{
+    display: hidden;
+}
+
+/* Extras */
+.in_ext:checked ~ .extras{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    width: 700px; 
+     height: 565px;
+    /* right: 40px; */
+}
+
+.in_ext:checked ~ .extras{
+    display: hidden;
+}
+
+/* Volver */
+.volver:checked ~ .select{
+    display: none;
+}
+
+/* INFOBLOCKS */
+.estudios,
+.experiencia,
+.extras{
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+    width: 10px;
+    height: 10px;
+    transition: all 1s ease;
+}
+
+
+.titulo-azul{
+    color: var(--color-principal);
+}
+
+.estudios,
+.complementaria,
+.reglada{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 560px;
+}
+
+.formacion{
+    display: flex;
+}
+
+.estudios div{
+    margin: 10px;
+}
+
+.titulo_princ{
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+
+
+
+
+.go_back{
+    position: absolute;
+    bottom: 30px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
