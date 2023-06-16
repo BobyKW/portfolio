@@ -230,8 +230,8 @@ input{
     position: absolute;
     background-color: #fff;
     width: 700px;
-    height: 565;
-    overflow-y: scroll;
+    height: 565px;
+    /* overflow-y: scroll; */
     /* right: 40px; */
 }
 
@@ -268,9 +268,9 @@ input{
 }
 
 /* Volver */
-.volver:checked ~ .select{
+/* .volver:checked ~ .select{
     display: none;
-}
+} */
 
 /* INFOBLOCKS */
 .estudios,
@@ -298,7 +298,7 @@ input{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    opacity: 0;
+    /* opacity: 0; */
     /* height: 560px; */
 }
 
