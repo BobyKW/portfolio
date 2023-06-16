@@ -317,6 +317,15 @@ input{
 }
 
 /* Experiencia */
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
 .trabajos ul{
     list-style: none;
 }
@@ -324,12 +333,16 @@ input{
 .exp__bloque-uno{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 .desarrollo_web{
     flex-direction: column;
 }
 
+.camarero{
+    margin-top: 30px;
+}
 
 
 
