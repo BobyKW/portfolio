@@ -302,7 +302,8 @@ input{
     /* height: 560px; */
 }
 
-.formacion{
+.formacion,
+.exp{
     display: flex;
 }
 
@@ -315,6 +316,19 @@ input{
     font-size: 2em;
 }
 
+/* Experiencia */
+.trabajos ul{
+    list-style: none;
+}
+
+.exp__bloque-uno{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desarrollo_web{
+    flex-direction: column;
+}
 
 
 
