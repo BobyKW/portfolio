@@ -134,7 +134,7 @@ hr{
     color: #6DD5FA;
     background-color: #000;
     border-radius: 10px;
-    padding: 0px 50px;
+    padding: 0px auto;
     transition: all 1s ease;
 }
 
