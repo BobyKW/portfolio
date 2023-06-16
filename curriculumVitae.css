@@ -280,8 +280,8 @@ input{
     flex-direction: column;
     text-align: center;
     overflow-y: scroll;
-    width: 10px;
-    height: 10px;
+    width: 0px;
+    height: 0px;
     transition: all 1s ease;
 }
 
