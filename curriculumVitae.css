@@ -231,6 +231,7 @@ input{
     background-color: #fff;
     width: 700px;
     height: 565;
+    overflow-y:scroll ;
     /* right: 40px; */
 }
 
@@ -279,7 +280,7 @@ input{
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     width: 0px;
     height: 0px;
     transition: all 1s ease;
